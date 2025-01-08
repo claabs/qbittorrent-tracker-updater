@@ -1,7 +1,8 @@
 # qbittorrent-tracker-updater
 
 A shell script that fetches public tracker lists and updates qBitorrent's "Automatically append these trackers to new downloads" list setting.
-Does not update any torrents.
+
+Does not update any torrents. For updating existing torrents, use [this](https://github.com/Jorman/Scripts?tab=readme-ov-file#addqbittorrenttrackerssh).
 
 ## Config
 
@@ -20,6 +21,7 @@ Does not update any torrents.
 | CRON_SCHEDULE  | `* * * * *`                                                           | `5 2 * * *`                                                                       | Cron schedule of when to run the job                                         |
 | RUN_ON_STARTUP | `false`                                                               | `true`                                                                            | If true, runs the script immediately on startup, then schedules the cron job |
 | RUN_ONCE       | `true`                                                                | `false`                                                                           | If true, does not schedule the cron job                                      |
+| TZ             | `America/Chicago`                                                     | `UTC`                                                                             | Your timezone identifier                                                     |
 
 ## Development
 
